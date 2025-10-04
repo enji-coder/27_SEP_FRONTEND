@@ -1,0 +1,132 @@
+what is javascript ? 
+----------------------------
+javascript is a most popular , object based programing or scripting language.
+
+javascript mainly use for create interactive web pages. 
+
+---------------------------------
+why javascript ?
+
+----------------------------------
+using of html we can create structure of webpages 
+
+<html>
+    <head></head>
+    <body></body>
+</html>
+
+using of css we can add styles on webpages. 
+
+<h1 style="color:blue">hello users !</h1>
+
+using of javascript we can handle behaviour of web pages. 
+
+e.g.  on button click we can change any style or webpage 
+========================================================
+history of javascript 
+=======================================================
+earlier in 1995 netscape (old web browser company) wants to build interactive webpages 
+so, they want to create one scripting language. 
+
+A programmer - brendan Eich he created javascript within 10days only.
+
+intially it was know as mocha , then livescript then they change it as 
+
+javascript (because at that time java programing language is much popular)
+
+but both are different language java and javascript
+
+    tea != teacher 
+    car != carpet
+
+in 1997 they hand over javascript to ECMA company 
+
+(European Computer Manufacturing Association) - then after they change is ES (Ecma Script)
+
+e.g.  ES6 javascript 
+
+Es6 launch in 2015 - at that time they introduce let , const and many more thing. 
+=======================================
+there are 3 ways to run javascript programs 
+
+1) create html file and embedd js in <style> tag
+
+2) create .js file and run with node 
+
+    e.g.   node <filename>
+
+3) open browser -> inspect -> console
+
+        e.g.  console.log("hello")
+
+===========================================
+variables : Variable is a name which can store a value. 
+
+    in javascript there are 3 ways to declare variable. 
+
+    1) var 
+    2) let 
+    3) const 
+
+1) var : var is launch earlier javascript. 
+
+        var is use in old javascript. 
+
+        var is a function based scope 
+
+        which we can use inside the function only. 
+
+        using of var keyword we can declare variable. 
+
+        we can re-declare and we can redefine , update values.   
+
+2) let : 
+        let which newly launch in ES6 
+
+        let which is use in block only. 
+
+        we can update it but we can't re-declare in same block. 
+
+        using of let keyword we can create variable. 
+
+3) const : 
+
+        const which use to make variable constant 
+
+        so, we can't change it value after declaration. 
+
+        using of const keyword we can declare const variable. 
+
+===============================================================
+prompt : prompt function in javascript 
+
+    using of prompt we can accept value from user at run time 
+
+    it is same like input() function in python. 
+
+    by default prompt function accept value in string format. 
+
+    syntax : 
+
+        prompt("prompt message")
+
+
+    prompt is a run dialog box which accept value from browser 
+
+==========================================================
+type casting : to convert one data type value into another data type its called type casting.
+
+        for example 
+
+        convert string value into integer there are different ways to achieve this type 
+        casting. 
+
+        Number("strvalue")
+
+        but it will return NaN when string does not able to convert in numeric format 
+        
+
+
+parseInt : using of parseInt we can completely convert string into int. 
+
+    
