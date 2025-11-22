@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div>
+        <h1>This is h1</h1>
+        <p>this is para 1</p>
+        <p>this is para 2</p>
+        <p>this is para 3</p>
+    </div>
+    
+
+    <script>
+        let h1 = document.querySelector("h1");
+        console.log(h1);
+        
+        h1.addEventListener("click",function(){
+            let nextElement = this.nextElementSibling;
+            console.log(nextElement);
+            nextElement.style.backgroundColor = "yellow";
+        })
+    </script>
+</body>
+</html>

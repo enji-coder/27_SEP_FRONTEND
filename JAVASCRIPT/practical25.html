@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .que
+        {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .ans
+        {
+            background-color: purple;
+            color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="mainContainer">
+            <div class="subContainer">
+                <div class="que">
+                    <h1>what is full form of HTML</h1>
+                </div>
+                <div class="ans">
+                    <h3>HYPER TEXT MARKUP LANGUAGE</h3>
+                </div>
+            </div>
+            <div class="subContainer">
+                <div class="que">
+                    <h1>WHAT IS CSS ? </h1>
+                </div>
+                <div class="ans">
+                    <h3>CSS : CASCADING STYLE SHEET</h3>
+                </div>    
+            </div>
+             <div class="subContainer">
+                <div class="que">
+                    <h1>WHAT IS JS  ? </h1>
+                </div>
+                <div class="ans">
+                    <h3>Javascript is a scripting language </h3>
+                </div>    
+            </div>
+        </div>
+
+        <script>
+            var allQue = document.querySelectorAll(".que")
+            allQue.forEach(function(que){
+                que.addEventListener("click",function(){
+                    let ans = this.nextElementSibling;
+                    if(ans.style.display === "block")
+                    {
+                        ans.style.display = "none";
+                    }
+                    else
+                    {
+                        ans.style.display = "block";
+                    }
+                    
+                })
+            })
+            
+            
+        </script>
+</body>
+</html>

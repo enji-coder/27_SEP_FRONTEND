@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <!-- forEach loop :  it is mainly work upon nodelist and array only 
+            easy to iterate each element 
+    for Loop :  
+            it is work with any kind of length 
+
+            this is very common loop to iterate any elememts  -->
+    
+    <h1>My First Tag</h1>               
+    <h1>My Second Tag</h1>               
+    <h1>My Third Tag</h1>               
+    <h1>My Fourth</h1>
+
+    <script>
+        var allH1 = document.querySelectorAll("h1");
+        console.log(allH1);
+        
+        // using of for.. in loop 
+
+        // for (let h1 in allH1)
+        // {
+        //     console.log(h1);
+        // }
+        allH1.forEach(function(h1){
+            console.log(h1.innerText);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h1>Hello 1</h1>
+    <h1>Hello 2</h1>
+    <h1>Hello 3</h1>
+    <h1>Hello 4</h1>
+    <h1>Hello 5</h1>
+
+    <script>
+        let allH1 = document.querySelectorAll("h1");
+
+        allH1.forEach(function(h1){
+            // console.log(h1.innerText);
+            
+            h1.addEventListener("click",function(){
+                alert(h1.innerText);
+            })
+        })
+    </script>
+</body>
+</html>

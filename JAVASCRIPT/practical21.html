@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div id="mydiv" style="background-color: brown;height: 150px;width: 150px;"></div>
+
+    <button>purple</button>
+    <button>yellow</button>
+    <button>green</button>
+    <button>orange</button>
+
+    <script>
+        let mydiv = document.getElementById("mydiv");
+
+        let btns = document.querySelectorAll("button");
+
+        console.log(btns);
+        
+        btns.forEach(function(btn){
+            btn.addEventListener("click",()=>{
+                // alert(btn.innerText);
+                mydiv.style.backgroundColor = btn.innerText;
+            })
+        })
+    </script>
+</body>
+</html>

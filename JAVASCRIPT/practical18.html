@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <!-- QuerySelector  : it fetch only first matching element 
+ 
+    QuerySelector All  : it return nodelist. same like array 
+
+                       : to access element we need to use loop here  -->
+
+    <h1>My First Tag</h1>               
+    <h1>My Second Tag</h1>               
+    <h1>My Third Tag</h1>               
+    <h1>My Fourth</h1>
+     
+    <script>
+        var allH1 = document.querySelectorAll("h1");
+        console.log(allH1); // nodelist 
+        console.log(allH1[0]);
+
+        console.log(allH1[0].innerHTML);
+        
+    </script>
+</body>
+</html>

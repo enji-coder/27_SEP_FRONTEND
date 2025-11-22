@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <style>
+        .myclass
+        {
+            background-color: purple;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <h1 id="myh1">Hello welcome to HTML JS </h1>
+
+    <button id="mybtn">Apply  style </button>
+
+    <script>
     
+        var h1 = document.getElementById("myh1");
+
+        document.getElementById("mybtn").addEventListener("click",function(){
+            h1.classList.add("myclass");
+        })
+            
+    </script>
 </body>
 </html>

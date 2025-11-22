@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .thumbnails img{
+            height: 160px;
+            width: 160px;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .mainContainer img{
+            height: 360px;
+            width: 500px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbnails">
+        <img src="images/image1.jpg" />
+        <img src="images/image2.jpg" />
+        <img src="images/image3.jpg" />
+    </div>
+    <div class="mainContainer">
+        <img src="images/image1.jpg" />
+    </div>
+
+    <script>
+        let allThumbnails = document.querySelectorAll(".thumbnails img");
+        // console.log(allThumbnails);
+
+        allThumbnails.forEach(function(img){
+            img.addEventListener("click",function(){
+                // console.log("clickeddd !");
+                let path = this.getAttribute("src");
+                console.log(path);
+                
+                let mainContainer = document.querySelector(".mainContainer img");
+                mainContainer.setAttribute("src",path);
+
+                // this.setAttribute("src","images/no_img.jpg");
+            })
+        })
+        
+    </script>
+</body>
+</html>
