@@ -130,3 +130,18 @@ type casting : to convert one data type value into another data type its called 
 parseInt : using of parseInt we can completely convert string into int. 
 
     
+========================================================
+Function : Function is a block of code . 
+        that block we can call anywhere anytime. 
+        using of function we can reduce our code. 
+
+        using of function we can save time. 
+
+        in javascript using of function keyword we can create a function. 
+syntax : 
+
+function  <funname>(){
+
+}
+
+-----------------------------------------------

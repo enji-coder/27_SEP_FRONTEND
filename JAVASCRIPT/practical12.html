@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <input type="text" id="nameid" placeholder="Enter your name :"/>
+
+    <button onclick="submit()">Submit</button>
+
+    <h1 id="displayid"></h1>
+
+    <script>
+        function submit(){
+            let name = document.getElementById("nameid").value;
+            console.log(name);
+            document.getElementById("displayid").innerHTML ="Hello "+name;
+            document.getElementById("nameid").value = "";
+        }
+    </script>
+</body>
+</html>
