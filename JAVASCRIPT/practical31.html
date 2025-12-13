@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+        var inputBox = document.createElement("input");
+        
+        inputBox.setAttribute("type","text");
+        inputBox.setAttribute("id","nameid");
+        inputBox.setAttribute("name","username");
+        inputBox.setAttribute("placeholder","Enter your name :")
+
+        document.body.append(inputBox);
+
+        console.log(inputBox);
+
+        var btn = document.createElement("button");
+        btn.textContent = "Submit";
+
+        document.body.append(btn);
+
+        var ul = document.createElement("ul");
+        ul.id = "myul";
+
+       
+
+        btn.addEventListener("click",function(){
+            var li = document.createElement("li");
+            li.textContent = inputBox.value;
+            ul.appendChild(li);
+            inputBox.value = "";
+        })
+
+        document.body.append(ul);
+    </script>
+</body>
+</html>

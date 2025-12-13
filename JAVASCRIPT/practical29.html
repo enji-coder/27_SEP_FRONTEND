@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <input type="text" id="subjectid" placeholder="Enter your subject" />
+    <button onclick="addSubject()">Add subject</button>
+
+    <script>
+        var ul = document.createElement("ul");
+        ul.id = "myul";
+
+        function addSubject()
+        {
+            var ul = document.getElementById("myul");
+            var subjectid = document.getElementById("subjectid");
+
+            // console.log(subjectid.value);
+
+            var li = document.createElement("li");
+            li.textContent = subjectid.value;
+            ul.appendChild(li);
+
+            subjectid.value = "";
+        }
+        document.body.append(ul);
+    </script>
+</body>
+</html>

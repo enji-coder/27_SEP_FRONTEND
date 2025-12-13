@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="addText()">Add Text</button>
+    <button onclick="removeText()">Remove Text</button>
+    <script>
+        function addText()
+        {
+            var h1 = document.createElement("h1");
+            h1.textContent = "hello";
+            h1.id = "myh1";
+
+            document.body.append(h1);
+        }
+        function removeText()
+        {
+            document.getElementById("myh1").remove();
+        }
+    </script>
+</body>
+</html>

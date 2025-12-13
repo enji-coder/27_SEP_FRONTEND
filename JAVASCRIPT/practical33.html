@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <input type="text" id="nameid" placeholder="Enter name : "/>
+    <input type="text" id="subjectid" placeholder="Enter subject : "/>
+
+    <button onclick="addRecords()">Submit</button>
+
+    <script>
+        let student = {};  
+
+        function addRecords()
+        {
+            var name = document.getElementById("nameid");
+            var subject = document.getElementById("subjectid");
+
+            student["name"] = name.value;
+            student["subject"] = subject.value;
+            
+            name.value = "";
+            subject.value = "";
+
+            for(var key in student)
+            {
+                console.log(key," = ",student[key]);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button onclick="myTitle()">Visible Title</button>
+    <!-- <button onclick="removeTitle()">Remove</button> -->
+    <script>
+        function myTitle()
+        {
+            // alert("hello");
+            var h1 = document.createElement("h1");
+            // <h1></h1>
+            h1.textContent = "MY JS APP ";
+            // <h1>MY JS APP</h1>
+            document.body.append(h1);
+        }
+        // function removeTitle()
+        // {
+        //     document.body.remove(h1);
+        // }
+    </script>
+</body>
+</html>

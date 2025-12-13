@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <input type="text" id="urlId" placeholder="Enter url" name="url"/>
+    <button onclick="createUrl()">create url</button>
+
+    <script>
+        function createUrl()
+        {
+            var url = document.getElementById("urlId");
+
+            var a = document.createElement("a");
+            a.textContent = "click here for gmail"
+            a.setAttribute("href",url.value);
+
+            document.body.append(a);
+        }
+    </script>
+</body>
+</html>

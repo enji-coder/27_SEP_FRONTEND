@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+        /*
+        Object : object is a most powerfull concept of javascript 
+
+            which is contain records in key and value pair. 
+
+            e.g. var obj = {};
+        */ 
+
+        var student = {
+            name : "AAA",
+            subject : "python",
+            score : 89,
+        }
+
+        console.log(student);
+
+
+        // most common way to accept object using of dot notation 
+        console.log(student.name);
+        console.log(student.subject);
+        
+        // using of square bracket we can access object's properties 
+        console.log(student["name"]);
+        console.log(student["subject"]);
+
+        // update object properties 
+        student["subject"] = "FRONTEND";
+
+        console.log(student.subject);
+
+        // object which is contain function inside the object 
+        var student = {
+            name : "Aarav",
+            score : function(){
+                console.log("Aarav's score is more than 80");
+            }
+        }
+        student.score();
+        
+        
+    </script>
+</body>
+</html>
