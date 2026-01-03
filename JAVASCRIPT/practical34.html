@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        table
+        {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        tr,th,td
+        {
+            padding: 20px;
+            border: 2px solid black;    
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="nameid" placeholder="Enter name "/>
+    <input type="text" id="subjectid" placeholder="Enter subject "/>
+    <input type="text" id="scoreid" placeholder="Enter score "/>
+
+    <button onclick="addRecord()">Add Record</button>
+
+    <hr>
+    <table>
+        <thead>
+    
+            <th>NAME</th>
+            <th>SUBJECT</th>
+            <th>SCORE</th>
+            <th>ACTION</th>
+        </thead>
+
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+
+    <script>
+        function addRecord()
+        {
+            let name = document.getElementById("nameid");
+            let subject = document.getElementById("subjectid");
+            let score = document.getElementById("scoreid");
+
+            let tbody = document.getElementById("tbody");
+
+            let tr = document.createElement("tr");
+            var tdname = document.createElement("td");
+
+            tdname.textContent = name.value;
+            
+            var tdsubject = document.createElement("td");
+            tdsubject.textContent = subject.value;
+
+            var tdscore = document.createElement("td");
+            tdscore.textContent = score.value;
+            
+            var btndel = document.createElement("button");
+            btndel.textContent = "Delete";
+
+            tr.append(tdname);
+            tr.append(tdsubject);
+            tr.append(tdscore);
+            tr.append(btndel);
+
+            tbody.append(tr);
+
+            btndel.addEventListener("click",function(){
+                tr.remove();
+            });
+
+            name.value = "";
+            subject.value = "";
+            score.value = "";
+
+
+            // console.log(tr);
+            
+        }
+    </script>
+</body>
+</html>
